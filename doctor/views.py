@@ -18,5 +18,5 @@ def index(request):
 
 
 
-    return render(request, 'doctor/index.html')
+    return render(request, 'doctor/index.html', context)
 
