@@ -4,12 +4,19 @@ from .models import Doctor
 
 
 
+def signup(request):
+
+	pass
+
+
+
+
 def index(request):
     #return HttpResponse("Hello, world. You're at the doctor index.")
 
     #return render(request, 'doctor/index.html')
 
-    doctor_list = Doctor.objects.order_by('-last_name')
+    doctor_list = Doctor.objects.order_by('last_name')
 
     context = {
 
@@ -19,4 +26,27 @@ def index(request):
 
 
     return render(request, 'doctor/index.html', context)
+
+
+def doctor(request, doctor_id):
+
+
+	try:
+
+		doctor = Doctor.objects.get(pk=doctor_id)
+
+	except Doctor.DoesNotExist:
+
+		raise Http404("Doctor does not exist")
+
+	return render(request, 'doctor/doctor.html', {'doctor': doctor})
+
+
+def signup(request):
+
+	return render(request, 'doctor/signup.html',)
+
+
+
+
 
