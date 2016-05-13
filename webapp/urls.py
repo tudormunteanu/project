@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^doctor/', include('doctor.urls')),
     url(r'^patient/', include('patient.urls')),
+    url(r'^doctor/signup/', include('doctor.urls'))
 ]

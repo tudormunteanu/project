@@ -6,7 +6,11 @@ from .models import Doctor
 
 def signup(request):
 
-	pass
+	model = Doctor
+	template = 'doctor/signup.html'
+
+	return render(request, 'doctor/signup.html',)
+
 
 
 
@@ -42,9 +46,6 @@ def doctor(request, doctor_id):
 	return render(request, 'doctor/doctor.html', {'doctor': doctor})
 
 
-def signup(request):
-
-	return render(request, 'doctor/signup.html',)
 
 
 
