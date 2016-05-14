@@ -1,15 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Doctor
+from .forms import DoctorForm
 
 
 
 def signup(request):
 
-	model = Doctor
-	template = 'doctor/signup.html'
+	form = DoctorForm()
 
-	return render(request, 'doctor/signup.html',)
+	context = { 
+
+	'form': form
+
+	}
+
+	return render(request, 'doctor/signup.html', context)
 
 
 
