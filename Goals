@@ -3,3 +3,13 @@ Goals 5/13
 Create a form
 Configure bootstrap
 Write tests
+
+Goals 5/20
+
+Finish form creation -- add submit button
+
+https://docs.djangoproject.com/en/1.9/topics/forms/#form-rendering-options
+
+Process form data - updating database model
+
+Write test

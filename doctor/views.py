@@ -7,7 +7,17 @@ from .forms import DoctorForm
 
 def signup(request):
 
-	form = DoctorForm()
+	
+
+	if request.method == 'POST':
+		form = DoctorForm(request.post)
+
+		if form.is_valid():
+			return HttpResponseRedirect('/thanks/')
+
+	else:
+
+		form = DoctorForm()
 
 	context = { 
 

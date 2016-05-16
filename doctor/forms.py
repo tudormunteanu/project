@@ -8,8 +8,8 @@ class DoctorForm(ModelForm):
 
     class Meta:
     	model = Doctor
-    	fields = ['first_name', 'last_name']
+    	fields = ['first_name', 'last_name', 'email']
 
     def __str__(self): #not mandatory
 
-    	return self.name
+    	return self.name 
