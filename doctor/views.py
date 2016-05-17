@@ -13,6 +13,11 @@ def signup(request):
 		form = DoctorForm(request.post)
 
 		if form.is_valid():
+
+			form = form.save()
+
+			form.save
+
 			return HttpResponseRedirect('/thanks/')
 
 	else:

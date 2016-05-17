@@ -1,19 +1,19 @@
 {% extends 'doctor/base.html' %}
 
 {% block content %}
+
 <h1> Sign up </h1>
 
 
 
 
 	
-		
 
 <form action="doctor/signup/" method="post"> 
 
 <div class="fieldWrapper">
 
-    {{ form.first_name.errors }}
+    {{ form.first_name.errors }} <!-- what is .errors? -->
     <label for="{{ form.first_name.id_for_label }}">First Name:</label>
     {{ form.first_name }}
 
@@ -27,10 +27,19 @@
     
 </div>
 
+<div class="fieldWrapper">
+
+    {{ form.email.errors }} 
+    <label for="{{ form.email.id_for_label }}">E-mail:</label>
+    {{ form.email }}
+    
+</div>
+
 <input type="submit" value="Submit" />
 
 
 </form>
+
 
 {% endblock %}
 
