@@ -6,10 +6,7 @@
 
 
 
-
-	
-
-<form action="doctor/signup/" method="post"> 
+<form method="post"> 
 
 <div class="fieldWrapper">
 
@@ -37,7 +34,7 @@
 
 <input type="submit" value="Submit" />
 
-
+{% csrf_token %}
 </form>
 
 

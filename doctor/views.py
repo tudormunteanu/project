@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponseRedirect, HttpResponse
 from .models import Doctor
 from .forms import DoctorForm
 
@@ -10,15 +10,14 @@ def signup(request):
 	
 
 	if request.method == 'POST':
-		form = DoctorForm(request.post)
+		form = DoctorForm(request.POST)
 
 		if form.is_valid():
 
 			form = form.save()
 
-			form.save
 
-			return HttpResponseRedirect('/thanks/')
+			return HttpResponseRedirect('thanks/')
 
 	else:
 
