@@ -6,9 +6,9 @@
 
 
 
-<form method="post"> 
+<form method="post" role="form">
 
-<div class="fieldWrapper">
+<div class="form-group">
 
     {{ form.first_name.errors }} <!-- what is .errors? -->
     <label for="{{ form.first_name.id_for_label }}">First Name:</label>
@@ -16,7 +16,7 @@
 
 </div>
 
-<div class="fieldWrapper">
+<div class="form-group">
 
     {{ form.last_name.errors }}
     <label for="{{ form.last_name.id_for_label }}">Last Name:</label>
@@ -24,7 +24,7 @@
     
 </div>
 
-<div class="fieldWrapper">
+<div class="form-group">
 
     {{ form.email.errors }} 
     <label for="{{ form.email.id_for_label }}">E-mail:</label>
@@ -35,6 +35,7 @@
 <input type="submit" value="Submit" />
 
 {% csrf_token %}
+
 </form>
 
 
