@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bootstrap3',
     'patient',
-    'doctor'
+    'doctor',
+    'rest_framework',
 ]
 
 MIDDLEWARE_CLASSES = [
