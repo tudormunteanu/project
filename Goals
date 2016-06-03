@@ -13,3 +13,16 @@ https://docs.djangoproject.com/en/1.9/topics/forms/#form-rendering-options
 Process form data - updating database model
 
 Write test
+
+Goals 5/27
+
+Make front end look better with Bootstrap
+check out APIs http://www.django-rest-framework.org/
+
+Install
+
+https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en
+Work through django restframework
+authentication in django: https://docs.djangoproject.com/en/1.9/topics/auth/
+
+https://plus.google.com/hangouts/_/thinkful.com/tmunteanu?authuser=1
