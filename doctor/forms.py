@@ -13,3 +13,4 @@ class DoctorForm(ModelForm):
     def __str__(self): #not mandatory
 
     	return self.name 
+    	

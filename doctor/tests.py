@@ -28,3 +28,6 @@ class DoctorFormTestCase(TestCase):
 		self.assertEqual(doctor.email, "Aanderson@gmail.com")
 
 
+	
+
+
