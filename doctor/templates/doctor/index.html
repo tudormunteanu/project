@@ -6,9 +6,11 @@
 	<ul>
 		{% for doctor in doctor_list%}
 
-			<li> <a href="/doctor/{{ doctor.id }}/"
+			<li> <a href="/doctor/{{ doctor.id }}/"> {{ doctor.first_name }} {{ doctor.last_name }}
 
-</a></li>
+</a>
+
+</li>
 
 		{% endfor %}
 
